@@ -1,3 +1,5 @@
+//Write a Java program to create class called Animal with method makesound(). Create a subclass Cat that overrides makesound() method to Meow.
+
 abstract class Animal
 {
 	abstract void makesound();
@@ -15,5 +17,5 @@ public class P1 {
 		a.makesound();
 	}
 }
------------output--------
+-----------output-----------
 Meow
