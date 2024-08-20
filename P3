@@ -1,0 +1,29 @@
+//Create class Employee with methods called getSalary() and work(). Create subclass HRManager that overrides work() method and adds a new method called addEmployee.
+
+abstract class Employee
+{
+	abstract void getSalary();
+	abstract void work();
+}
+class HRManager extends Employee
+{
+	void work()
+	{
+		System.out.println("Works as an HR Manager.");
+	}
+	void addEmployee()
+	{
+		System.out.println("Here comes a new employee");
+	}
+}
+public class P1 {
+	public static void main(String args[])
+	{
+		HRManager e= new HRManager();
+		e.work();
+		e.addEmployee();
+	}
+}
+------output------
+Works as an HR Manager.
+Here comes a new employee
