@@ -1,0 +1,31 @@
+//Create class Shape with methods called getPerimeter() and getArea(). Create a subclass Circle that overrides getPerimeter() and getArea() methods to calculate the area and perimeter of Circle.
+
+abstract class Shape
+{
+	abstract void getPerimeter();
+	abstract void GetArea();
+}
+
+class Circle extends Shape
+{
+	float r= 7;
+	void getPerimeter()
+	{
+		System.out.println("Perimeter is "+(3.14f*2*r));
+	}
+	void getArea()
+	{
+		System.out.println("Area is "+(3.14f*r*r));
+	}
+}
+public class P1 {
+	public static void main(String args[])
+	{
+		Circle c= new Circle();
+		c.getPerimeter();
+		c.getArea();
+	}
+}
+-------output---------
+Perimeter is 43.960003
+Area is 153.86002
