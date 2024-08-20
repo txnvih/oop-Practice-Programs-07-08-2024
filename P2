@@ -1,0 +1,21 @@
+//Write a Java program to create class vehicle with method called drive. Create subclass car that overrides method drive to print "Repairing a Car".
+
+abstract class Vehicle
+{
+	abstract void drive();
+}
+class Car extends Vehicle
+{
+	void drive()
+	{System.out.println("Repairing a Car");
+	}
+}
+public class P1 {
+	public static void main(String args[])
+	{
+		Vehicle v= new Car();
+		v.drive();
+	}
+}
+----------output--------
+Repairing a Car
